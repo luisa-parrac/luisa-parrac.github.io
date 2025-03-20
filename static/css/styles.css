@@ -1,0 +1,314 @@
+/* Estilos generales */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+    font-family: 'DM Serif Display', serif; /* Fuente para los títulos */
+    font-weight: 600;
+}
+
+/* Estilo del título principal */
+h1 {
+    font-family: 'DM Serif Display', serif; /* Fuente para el título */
+    font-size: 1.0rem; /* Tamaño más pequeño */
+    color: #ffffff; /* Color negro */
+    text-align: center; /* Centrado */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Header */
+header {
+    background-color: #f9f9f9;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4c8550;
+}
+
+/* Banner */
+.banner {
+    margin-top: 100px; /* Ajusta según el tamaño del header */
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+}
+
+.banner h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #4c8550;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #387144;
+}
+
+/* Productos Destacados */
+.productos-destacados {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.productos-destacados h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.productos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.producto {
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    font-size: 2rem;
+    margin: 15px 0;
+    color: #333;
+}
+
+.producto p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos de la sección de productos destacados */
+.productos-destacados {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Fondo claro */
+}
+
+.productos-destacados h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilos de cada producto */
+.producto {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #333;
+}
+
+.producto p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Estilos del botón "Ver más" */
+.cta-button {
+    background-color: #b3af8b;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #b3af8b; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Estilos de los iconos de redes sociales */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white; /* Color de los iconos */
+    margin: 0 10px; /* Espaciado entre iconos */
+    font-size: 24px; /* Tamaño de los iconos */
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+.social-icons a:hover {
+    color: #ff6f61; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos de la sección de descripción */
+.descripcion {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.descripcion-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.descripcion-texto {
+    flex: 1;
+}
+
+.descripcion-texto h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.descripcion-texto p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.descripcion-imagen {
+    flex: 1;
+    text-align: center;
+}
+
+.descripcion-imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del botón "Volver Arriba" */
+.back-to-top {
+    position: fixed; /* Fija el botón en la pantalla */
+    bottom: 20px; /* Distancia desde la parte inferior */
+    right: 20px; /* Distancia desde la derecha */
+    background-color: #7d6c6b; /* Color de fondo */
+    color: white; /* Color del icono */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 50%; /* Forma circular */
+    text-align: center; /* Centrar el icono */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: background-color 0.3s ease; /* Transición suave */
+    display: none; /* Oculto por defecto */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.back-to-top:hover {
+    background-color: #7d6c6b; /* Cambia el color al pasar el mouse */
+}
+
+.back-to-top i {
+    font-size: 20px; /* Tamaño del icono */
+}

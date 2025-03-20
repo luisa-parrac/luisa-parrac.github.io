@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Línea de Cuidado de la Piel</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo de la marca">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/productos">Productos</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Bienvenido a Nuestra Tienda de Skincare</h1>
+            <p>Descubre nuestros productos estrella</p>
+            <a href="/productos" class="cta-button">Comprar ahora</a>
+        </div>
+    </section>
+
+    <!-- Sección de Descripción -->
+<section class="descripcion">
+    <div class="descripcion-content">
+        <div class="descripcion-texto">
+            <h2>¿Quiénes Somos?</h2>
+            <p>
+                En <strong>Línea de Cuidado de la Piel</strong>, nos dedicamos a ofrecer productos de alta calidad
+                para el cuidado de tu piel. Nuestro objetivo es ayudarte a lucir una piel saludable, radiante y
+                joven, utilizando ingredientes naturales y fórmulas avanzadas. Creemos que la belleza comienza
+                con una piel bien cuidada, y estamos aquí para acompañarte en ese proceso.
+            </p>
+        </div>
+        <div class="descripcion-imagen">
+            <img src="{{ url_for('static', filename='images/quienes-somos.jpg') }}" alt="Quiénes Somos">
+        </div>
+    </div>
+</section>
+
+    <!-- Productos Destacados -->
+    <section class="productos-destacados">
+        <h2>Productos Destacados</h2>
+        <div class="productos-container">
+            <div class="producto">
+                <img src="{{ url_for('static', filename='images/crema-hidratante.jpg') }}" alt="Crema Hidratante">
+                <h3>Crema Hidratante</h3>
+                <p>Piel suave y radiante todos los días. Nuestra crema hidratante nutre profundamente, dejando tu piel fresca, luminosa y sedosamente suave desde la primera aplicación..</p>
+                <a href="#" class="cta-button">Ver más</a>
+            </div>
+            <div class="producto">
+                <img src="{{ url_for('static', filename='images/serum-antiedad.jpg') }}" alt="Sérum Antiedad">
+                <h3>Sérum Antiedad</h3>
+                <p>Rejuvenece tu piel desde la primera gota. Nuestro sérum antiedad reduce líneas de expresión, aporta firmeza y deja tu piel visiblemente más suave y luminosa.</p>
+                <a href="#" class="cta-button">Ver más</a>
+            </div>
+            <div class="producto">
+                <img src="{{ url_for('static', filename='images/limpiador-facial.jpg') }}" alt="Limpiador Facial">
+                <h3>Limpiador Facial</h3>
+                <p>Limpieza profunda y suavidad en cada uso. Nuestro limpiador facial elimina impurezas y el exceso de grasa, dejando tu piel fresca, suave y equilibradas.</p>
+                <a href="#" class="cta-button">Ver más</a>
+            </div>
+            <div class="producto">
+                <img src="{{ url_for('static', filename='images/tonico-facial.jpg') }}" alt="Tónico Facial">
+                <h3>Tónico Facial</h3>
+                <p>Nuestro tónico facial equilibra el pH, hidrata y suaviza la piel, dejándola lista para el siguiente paso de tu rutina.</p>
+                <a href="#" class="cta-button">Ver más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Línea de Cuidado de la Piel by Luisa Fernanda Parra Cabrera UCC Semestre 1A</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+<!-- Botón "Volver Arriba" -->
+<a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+<script>
+    // Mostrar u ocultar el botón "Volver Arriba"
+    window.addEventListener('scroll', function() {
+        const backToTop = document.querySelector('.back-to-top');
+        if (window.scrollY > 200) { // Mostrar el botón después de 200px de scroll
+            backToTop.style.display = 'block';
+        } else { // Ocultar el botón si está en la parte superior
+            backToTop.style.display = 'none';
+        }
+    });
+
+    // Desplazamiento suave al hacer clic en el botón
+    document.querySelector('.back-to-top').addEventListener('click', function(e) {
+        e.preventDefault(); // Evita el comportamiento predeterminado del enlace
+        window.scrollTo({
+            top: 0, // Lleva al usuario al inicio de la página
+            behavior: 'smooth' // Desplazamiento suave
+        });
+    });
+</script>
+</body>
+</html>
