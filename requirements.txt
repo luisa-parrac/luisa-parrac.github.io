@@ -1,2 +1,4 @@
-echo "Flask\ngunicorn" > requirements.txt
+Flask  
+gunicorn  
+
 
